@@ -1,9 +1,9 @@
 name: pushADFtoPROD
 on:
-  #workflow_dispatch
-  push:
-    branches:
-      - adf_publish
+  workflow_dispatch
+  #push:
+    #branches:
+      #- adf_publish
 jobs:
   deploy-adf:
     runs-on: windows-latest
