@@ -1,6 +1,37 @@
 {
 	"name": "testPipeline",
 	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "testVar",
+					"value": {
+						"value": "@pipeline().parameters.testParam",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"testParam": {
+				"type": "string",
+				"defaultValue": "test"
+			}
+		},
+		"variables": {
+			"testVar": {
+				"type": "String",
+				"defaultValue": "tset"
+			}
+		},
 		"annotations": []
 	}
 }
