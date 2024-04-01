@@ -1,0 +1,9 @@
+{
+	"name": "testdeployadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "076d0759-1470-45eb-9496-d047de677a6f",
+		"tenantId": "6c637512-c417-4e78-9d62-b61258e4b619"
+	}
+}
